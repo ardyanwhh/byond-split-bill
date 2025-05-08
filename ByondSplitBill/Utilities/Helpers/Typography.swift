@@ -23,6 +23,7 @@ extension UIFont {
         case title3 = 21
         case title2 = 24
         case title = 28
+        case largeTitle = 34
     }
     
     static func apply(fontName name: CustomFontName, size: FontSizing) -> UIFont {
