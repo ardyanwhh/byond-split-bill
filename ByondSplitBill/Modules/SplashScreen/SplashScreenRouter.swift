@@ -19,7 +19,7 @@ struct SplashScreenRouter {
     }
     
     func navigateToMainModule(from navigation: UINavigationController?) {
-        let view = SplitBillDashboardRouter.showView()
+        let view = SplitBillSelectContactRouter.showView()
         navigation?.pushViewController(view, animated: true)
     }
 }

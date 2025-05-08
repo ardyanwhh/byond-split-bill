@@ -7,6 +7,7 @@ target 'ByondSplitBill' do
 
   # Pods for ByondSplitBill
   pod 'SkeletonView'
+  pod 'Alamofire'
 
   target 'ByondSplitBillTests' do
     inherit! :search_paths

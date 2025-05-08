@@ -40,6 +40,34 @@ class Navbar: UIView {
     }}
     
     private let titleLabel = UILabel()
+    private var titleLabelLeadingAnchor: NSLayoutConstraint?
+    private var titleLabelTrailingAnchor: NSLayoutConstraint?
+    
+    // right-menu
+    private let rightMenuHSV = UIStackView()
+    
+    func assignRightMenu(buttons: [UIButton]) {
+        guard buttons.count < 3 else { return }
+        
+        buttons.forEach { [weak self] button in
+            self?.rightMenuHSV.addArrangedSubview(button)
+            
+            NSLayoutConstraint.activate([
+                button.widthAnchor.constraint(equalToConstant: 56),
+                button.heightAnchor.constraint(equalToConstant: 48)
+            ])
+        }
+        
+        if buttons.count > 1 {
+            titleLabelLeadingAnchor?.constant = 112
+            titleLabelTrailingAnchor?.constant = -112
+        }
+    }
+    
+    // tint
+    override var tintColor: UIColor! { didSet {
+        titleLabel.textColor = tintColor
+    }}
     
     private func configure() {
         addSubviews(navView)
@@ -49,7 +77,7 @@ class Navbar: UIView {
             trailing: trailingAnchor, height: 56
         )
         
-        navView.addSubviews(popButton, titleLabel)
+        navView.addSubviews(popButton, titleLabel, rightMenuHSV)
         
         popButton.alpha = 0
         popButton.icon(source: .iconArrowLeft)
@@ -64,12 +92,25 @@ class Navbar: UIView {
         titleLabel.textColor = .textBlack100
         titleLabel.font = .apply(fontName: .dmSansBold, size: .body)
         titleLabel.textAlignment = .center
+        titleLabelLeadingAnchor = titleLabel.leadingAnchor
+            .constraint(equalTo: navView.leadingAnchor, constant: 56)
+        titleLabelTrailingAnchor = titleLabel.trailingAnchor
+            .constraint(equalTo: navView.trailingAnchor, constant: -56)
         titleLabel.activateConstraints(
-            leading: navView.leadingAnchor, trailing: navView.trailingAnchor,
-            centerY: (navView.centerYAnchor, 0), insets: .init(
-                top: 0, left: 56, bottom: 0, right: 56
-            )
+            centerY: (navView.centerYAnchor, 0), customAnchors: [
+                titleLabelLeadingAnchor!, titleLabelTrailingAnchor!
+            ]
         )
+        
+        rightMenuHSV.axis = .horizontal
+        rightMenuHSV.activateConstraints(
+            trailing: navView.trailingAnchor,
+            centerY: (navView.centerYAnchor, 0),
+            height: 48
+        )
+            
+        tintColor = .black
+        backgroundColor = .clear
     }
     
     @objc private func popDidTap(_ sender: UIButton) {
