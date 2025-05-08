@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoundedButton" customModule="BSIMobile" customModuleProvider="target">
+            <connections>
+                <outlet property="btnButton" destination="Vz8-wY-13Z" id="pyU-ST-hLV"/>
+                <outlet property="lblButton" destination="Lb6-nx-x8r" id="acH-z0-LnY"/>
+                <outlet property="mainView" destination="WMM-tu-Vg0" id="KWy-fe-ocx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-tu-Vg0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lb6-nx-x8r">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz8-wY-13Z">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=" "/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="BSIPrimaryColorGreen (#00BFB2)"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Vz8-wY-13Z" secondAttribute="trailing" id="6m4-5d-8cL"/>
+                        <constraint firstAttribute="trailing" secondItem="Lb6-nx-x8r" secondAttribute="trailing" id="HDx-W6-YJy"/>
+                        <constraint firstItem="Vz8-wY-13Z" firstAttribute="leading" secondItem="WMM-tu-Vg0" secondAttribute="leading" id="QlC-Mo-IK7"/>
+                        <constraint firstItem="Vz8-wY-13Z" firstAttribute="top" secondItem="WMM-tu-Vg0" secondAttribute="top" id="iK1-tW-Bk4"/>
+                        <constraint firstAttribute="bottom" secondItem="Lb6-nx-x8r" secondAttribute="bottom" id="iUF-Db-W2j"/>
+                        <constraint firstItem="Lb6-nx-x8r" firstAttribute="leading" secondItem="WMM-tu-Vg0" secondAttribute="leading" id="ire-bz-OZW"/>
+                        <constraint firstItem="Lb6-nx-x8r" firstAttribute="top" secondItem="WMM-tu-Vg0" secondAttribute="top" id="qPG-Mh-zpe"/>
+                        <constraint firstAttribute="bottom" secondItem="Vz8-wY-13Z" secondAttribute="bottom" id="wV7-WV-1OQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WMM-tu-Vg0" secondAttribute="bottom" id="DfW-NS-Y4P"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WMM-tu-Vg0" secondAttribute="trailing" id="hA6-Jd-9dA"/>
+                <constraint firstItem="WMM-tu-Vg0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="or3-jS-35Z"/>
+                <constraint firstItem="WMM-tu-Vg0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rbh-Z7-b7f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BSIPrimaryColorGreen (#00BFB2)">
+            <color red="0.0" green="0.74901960784313726" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

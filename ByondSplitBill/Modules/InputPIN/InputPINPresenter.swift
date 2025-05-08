@@ -18,4 +18,8 @@ class InputPINPresenter {
         self.router = router
         self.interactor = interactor
     }
+    
+    func navigatetoTransactionStatusPage() {
+        router.navigatetoTransactionStatusPage(from: view?.navigationController)
+    }
 }

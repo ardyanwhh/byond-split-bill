@@ -20,4 +20,9 @@ struct InputPINRouter {
         
         return view
     }
+    
+    func navigatetoTransactionStatusPage(from navigation: UINavigationController?) {
+        let view = TransferStatusRouter.showView()
+        navigation?.pushViewController(view, animated: true)
+    }
 }

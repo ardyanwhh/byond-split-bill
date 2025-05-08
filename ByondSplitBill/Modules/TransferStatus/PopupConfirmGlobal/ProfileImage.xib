@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileImage" customModule="BSIMobile" customModuleProvider="target">
+            <connections>
+                <outlet property="imgBackground" destination="uKo-P0-9KY" id="TCu-rG-LIw"/>
+                <outlet property="lblName" destination="AFF-Ft-SXc" id="FeE-OG-Dnl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzn-3K-GF0">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-green-circle" translatesAutoresizingMaskIntoConstraints="NO" id="uKo-P0-9KY">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-Ft-SXc">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="uKo-P0-9KY" secondAttribute="trailing" id="878-Jv-rj7"/>
+                        <constraint firstItem="uKo-P0-9KY" firstAttribute="top" secondItem="bzn-3K-GF0" secondAttribute="top" id="DMR-yG-xkB"/>
+                        <constraint firstItem="AFF-Ft-SXc" firstAttribute="leading" secondItem="bzn-3K-GF0" secondAttribute="leading" id="KdE-Iy-PwA"/>
+                        <constraint firstItem="AFF-Ft-SXc" firstAttribute="top" secondItem="bzn-3K-GF0" secondAttribute="top" id="ag8-Qb-AzY"/>
+                        <constraint firstAttribute="bottom" secondItem="AFF-Ft-SXc" secondAttribute="bottom" id="c2M-Iu-b06"/>
+                        <constraint firstAttribute="bottom" secondItem="uKo-P0-9KY" secondAttribute="bottom" id="czR-k7-MZ4"/>
+                        <constraint firstAttribute="trailing" secondItem="AFF-Ft-SXc" secondAttribute="trailing" id="jkV-uH-wx2"/>
+                        <constraint firstItem="uKo-P0-9KY" firstAttribute="leading" secondItem="bzn-3K-GF0" secondAttribute="leading" id="vSl-4R-yTZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bzn-3K-GF0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DkB-9E-8kq"/>
+                <constraint firstAttribute="trailing" secondItem="bzn-3K-GF0" secondAttribute="trailing" id="E1n-5V-ZY9"/>
+                <constraint firstItem="bzn-3K-GF0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Teg-iB-fPH"/>
+                <constraint firstAttribute="bottom" secondItem="bzn-3K-GF0" secondAttribute="bottom" id="YR8-0j-YvD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-green-circle" width="40" height="40"/>
+    </resources>
+</document>

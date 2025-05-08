@@ -20,4 +20,9 @@ struct TransferStatusRouter {
         
         return view
     }
+    
+    func navigateToInputPIN(from navigation: UINavigationController?) {
+        let view = InputPINRouter.showView()
+        navigation?.pushViewController(view, animated: true)
+    }
 }

@@ -32,7 +32,7 @@ class SearchBar: UITextField {
         
         addSubviews(magnifierIV)
         
-        magnifierIV.image = .iconMagnifier
+        magnifierIV.image = .iconSearchBlack
         magnifierIV.activateConstraints(
             leading: leadingAnchor, centerY: (centerYAnchor, 0),
             insets: .init(top: 0, left: 16, bottom: 0, right: 0),

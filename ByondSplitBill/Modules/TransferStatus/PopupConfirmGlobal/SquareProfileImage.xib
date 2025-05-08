@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Bold.ttf">
+            <string>DMSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SquareProfileImage" customModule="BSIMobile" customModuleProvider="target">
+            <connections>
+                <outlet property="imgBackground" destination="iKw-TN-eoZ" id="cNl-oT-tx8"/>
+                <outlet property="lblName" destination="Ilh-0d-E8l" id="7Rx-df-zIC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-Da-Px8">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKw-TN-eoZ">
+                            <rect key="frame" x="2" y="2" width="56" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilh-0d-E8l">
+                                    <rect key="frame" x="0.0" y="0.0" width="56" height="40"/>
+                                    <fontDescription key="fontDescription" name="DMSans-Bold" family="DM Sans" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Ilh-0d-E8l" secondAttribute="trailing" id="3Kj-nC-fxQ"/>
+                                <constraint firstAttribute="width" constant="56" id="P4j-GP-Gpz"/>
+                                <constraint firstItem="Ilh-0d-E8l" firstAttribute="leading" secondItem="iKw-TN-eoZ" secondAttribute="leading" id="d4d-Kz-miD"/>
+                                <constraint firstAttribute="height" constant="40" id="e2n-UO-FUT"/>
+                                <constraint firstItem="Ilh-0d-E8l" firstAttribute="top" secondItem="iKw-TN-eoZ" secondAttribute="top" id="eXN-1x-HWc"/>
+                                <constraint firstAttribute="bottom" secondItem="Ilh-0d-E8l" secondAttribute="bottom" id="f1m-qH-mSz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="iKw-TN-eoZ" firstAttribute="centerY" secondItem="Ryk-Da-Px8" secondAttribute="centerY" id="iZz-DA-6mM"/>
+                        <constraint firstItem="iKw-TN-eoZ" firstAttribute="centerX" secondItem="Ryk-Da-Px8" secondAttribute="centerX" id="mhm-gl-Ols"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ryk-Da-Px8" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="10O-oX-zyE"/>
+                <constraint firstItem="Ryk-Da-Px8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cup-7k-0e5"/>
+                <constraint firstItem="Ryk-Da-Px8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="b5u-Q1-pbz"/>
+                <constraint firstAttribute="trailing" secondItem="Ryk-Da-Px8" secondAttribute="trailing" id="oN1-FZ-n5d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="139" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

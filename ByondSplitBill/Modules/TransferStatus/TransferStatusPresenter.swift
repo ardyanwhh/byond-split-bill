@@ -17,4 +17,8 @@ class TransferStatusPresenter {
         self.router = router
         self.interactor = interactor
     }
+    
+    func navigateToInputPIN() {
+        router.navigateToInputPIN(from: view?.navigationController)
+    }
 }

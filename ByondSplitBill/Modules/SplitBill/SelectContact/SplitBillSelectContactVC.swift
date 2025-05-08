@@ -40,7 +40,7 @@ class SplitBillSelectContactVC: BaseViewController {
         navbar.assignRightMenu(buttons: [helpButton])
         navbar.activateConstraints(motherView: view)
         
-        helpButton.icon(source: .iconQuestionMarkCircle)
+//        helpButton.icon(source: .iconQuestionMarkCircle)
         
         selectedContactView.activateConstraints(
             top: navbar.bottomAnchor, leading: view.leadingAnchor,
