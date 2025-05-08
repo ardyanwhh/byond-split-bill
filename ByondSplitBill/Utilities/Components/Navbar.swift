@@ -11,10 +11,12 @@ class Navbar: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        configure()
     }
     
     private let navView = UIView()
@@ -61,9 +63,12 @@ class Navbar: UIView {
         
         titleLabel.textColor = .textBlack100
         titleLabel.font = .apply(fontName: .dmSansBold, size: .body)
+        titleLabel.textAlignment = .center
         titleLabel.activateConstraints(
             leading: navView.leadingAnchor, trailing: navView.trailingAnchor,
-            centerY: (navView.centerYAnchor, 0)
+            centerY: (navView.centerYAnchor, 0), insets: .init(
+                top: 0, left: 56, bottom: 0, right: 56
+            )
         )
     }
     

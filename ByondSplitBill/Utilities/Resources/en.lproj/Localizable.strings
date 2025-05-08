@@ -6,4 +6,24 @@
   
 */
 
+"general.next" = "Lanjutkan";
+"general.active" = "Aktif";
+"general.history" = "Riwayat";
+
 "splash.footer" = "PT Bank Syariah Indonesia Tbk berizin dan diawasi oleh Otoritas Jasa Keuangan dan Bank Indonesia serta merupakan Peserta Penjaminan LPS";
+
+"split.bill.dashboard.title" = "Split Bill";
+"split.bill.dashboard.button.title" = "Buat Split Bill Baru";
+"split.bill.dashboard.active.empty.title" = "Daftar split bill aktif kamu masih kosong";
+"split.bill.dashboard.active.empty.description" = "Mulai tambahkan split bill dengan menekan tombol '+' di bawah";
+"split.bill.dashboard.history.empty.title" = "Belum ada riwayat split bill";
+"split.bill.dashboard.history.empty.description" = "Akan terisi apabila semua user sudah berstatus 'Lunas'";
+
+"split.bill.select.method.title" = "Pilih Referensi";
+"split.bill.select.method.subtitle" = "Silakan pilih metode referensi yang sesuai dengan kebutuhanmu";
+"split.bill.select.method.menu.title1" = "Riwayat Transaksi";
+"split.bill.select.method.menu.title2" = "Kamera/Galeri";
+"split.bill.select.method.menu.title3" = "Custom";
+"split.bill.select.method.menu.subtitle1" = "Ambil data dari riwayat transaksimu dan gunakan sebagai referensi dalam pembuatan split bill";
+"split.bill.select.method.menu.subtitle2" = "Pilih menu ini untuk menjadikan nota pembayaran fisik sebagai referensi dari split bill";
+"split.bill.select.method.menu.subtitle3" = "Isi sendiri jumlah nominal secara manual agar lebih leluasa dalam menentukan split bill";

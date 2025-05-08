@@ -19,6 +19,7 @@ struct SplashScreenRouter {
     }
     
     func navigateToMainModule(from navigation: UINavigationController?) {
-        
+        let view = SplitBillDashboardRouter.showView()
+        navigation?.pushViewController(view, animated: true)
     }
 }
