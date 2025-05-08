@@ -20,4 +20,9 @@ struct SplitBillDashboardRouter {
         
         return view
     }
+    
+    func navigateToSelectMethod(from navigation: UINavigationController?) {
+        let view = SplitBillSelectMethodRouter.showView()
+        navigation?.pushViewController(view, animated: true)
+    }
 }

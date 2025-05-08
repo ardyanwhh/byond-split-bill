@@ -32,6 +32,7 @@ extension CGFloat {
         case screenWidth
         case screenHeight
         case statusBarHeight
+        case bottomBarHeight
     }
     
     static func apply(currentDevice option: DeviceGeometryReader) -> CGFloat {
@@ -39,6 +40,7 @@ extension CGFloat {
         case .screenWidth: return screen.width
         case .screenHeight: return screen.height
         case .statusBarHeight: return safeAreaInsets?.top ?? 0
+        case .bottomBarHeight: return bottomSafeArea.isZero ? 20 : bottomSafeArea
         }
     }
     
