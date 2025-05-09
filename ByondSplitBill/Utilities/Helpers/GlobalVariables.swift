@@ -12,4 +12,5 @@ class GlobalVariables {
     static let shared = GlobalVariables()
     
     var accountNumber: String?
+    var fullname: String?
 }

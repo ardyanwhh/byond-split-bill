@@ -19,7 +19,7 @@
 "split.bill.dashboard.history.empty.title" = "Belum ada riwayat split bill";
 "split.bill.dashboard.history.empty.description" = "Akan terisi apabila semua user sudah berstatus 'Lunas'";
 
-"split.bill.select.method.title" = "Pilih Referensi";
+"split.bill.select.method.title" = "Pilih referensi";
 "split.bill.select.method.subtitle" = "Silakan pilih metode referensi yang sesuai dengan kebutuhanmu";
 "split.bill.select.method.menu.title1" = "Riwayat Transaksi";
 "split.bill.select.method.menu.title2" = "Kamera/Galeri";

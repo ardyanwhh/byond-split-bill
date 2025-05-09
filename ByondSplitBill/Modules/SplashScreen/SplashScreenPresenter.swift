@@ -24,6 +24,7 @@ class SplashScreenPresenter {
             .store(in: &cancellableBag)
         
         GlobalVariables.shared.accountNumber = "6604718851"
+        GlobalVariables.shared.fullname = "Kevin"
     }
     
     @Published var networkState: NetworkState = .idle

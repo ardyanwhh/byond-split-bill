@@ -18,6 +18,7 @@ class SplitBillSelectMethodPresenter {
         self.interactor = interactor
     }
     
+    var selectedMethod = 0
     let methods: [[String]] = [
         [
             .apply(localizedWithName: .splitBillSelectMethodMenuTitle1),
@@ -32,4 +33,8 @@ class SplitBillSelectMethodPresenter {
             .apply(localizedWithName: .splitBillSelectMethodMenuSubtitle3),
         ],
     ]
+    
+    func navigateToNextPage() {
+        router.navigateToNextPage(from: view?.navigationController, selectedMethod: selectedMethod)
+    }
 }

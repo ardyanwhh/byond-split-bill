@@ -82,12 +82,18 @@ class SplitBillSelectMethodVC: BaseViewController {
         nextButton.backgroundColor = .primaryGreen
         nextButton.layer.cornerRadius = 24
         nextButton.disable()
+        nextButton.addTarget(self, action: #selector(
+            nextDidTap(_:)), for: .touchUpInside)
         nextButton.activateConstraints(
             top: footerView.topAnchor, leading: footerView.leadingAnchor,
             trailing: footerView.trailingAnchor, insets: .init(
                 top: 20, left: 20, bottom: 0, right: 20
             ), height: 48
         )
+    }
+    
+    @objc private func nextDidTap(_ sender: UIButton) {
+        presenter.navigateToNextPage()
     }
 }
 
@@ -115,6 +121,7 @@ extension SplitBillSelectMethodVC:
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.selectedMethod = indexPath.item
         nextButton.enable()
     }
 }

@@ -20,4 +20,13 @@ struct SplitBillSelectMethodRouter {
         
         return view
     }
+    
+    func navigateToNextPage(from navigation: UINavigationController?, selectedMethod: Int) {
+        switch selectedMethod {
+        case 2:
+            let view = SplitBillCreateNewRouter.showView()
+            navigation?.pushViewController(view, animated: true)
+        default: break
+        }
+    }
 }

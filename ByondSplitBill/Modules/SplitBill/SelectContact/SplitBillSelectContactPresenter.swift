@@ -29,6 +29,10 @@ class SplitBillSelectContactPresenter {
     @Published var networkState = NetworkState.idle
     var cancellableBag = Set<AnyCancellable>()
     var response: [SplitBill.MyContactsResponse?]?
+    var contactSelectIndices: Set<IndexPath> = []
+    var selectedContacts: [Contact] = [
+        .init(name: GlobalVariables.shared.fullname)
+    ]
     
     func fetch() {
         response = nil

@@ -8,7 +8,7 @@
 import UIKit
 import SkeletonView
 
-struct Contact {
+struct Contact: Equatable {
     var name: String?
     var accountNumber: String?
 }
@@ -88,5 +88,13 @@ class ContactCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    func changeSelected(_ isSelected: Bool) {
+        if isSelected {
+            checkmarkIV.image = .iconCheckmarkSelected
+        } else {
+            checkmarkIV.image = .iconCheckmark
+        }
     }
 }
